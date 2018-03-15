@@ -1,0 +1,39 @@
+
+/* Title section */
+.title-section {
+    background-color: grey;
+    height: 100px;
+    text-align: center;
+}
+
+.title-section p {
+    padding-top: 15px;
+    font-size: 50px;
+}
+
+/* Carousel section */
+.container {
+    margin-left: 15px;
+}
+
+#myCarousel {
+    width: 650px;
+}
+
+/* For small devices */
+
+@media screen and (max-width: 600px) {
+
+    .title-section {
+        height: 60px;
+        text-align: center;
+    }
+
+    .title-section p {
+        font-size: 25px;
+    }
+
+    #myCarousel {
+        width: 380px;
+    }
+}
