@@ -19,6 +19,65 @@
 #myCarousel {
     width: 650px;
 }
+header {
+        text-align: center;
+        background-size: cover;
+        background-color: black;
+        background-size: cover;
+      }
+  a   {
+    color: white;
+  }
+
+h1 {
+  color: white;
+  font-size: 80px;
+  font-family: Arial Black;
+  padding-top: 30px;
+  margin-top: 0px;
+  }
+ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 30 0 30;
+  background-color: black;
+
+}
+
+li {
+  display: inline-block;
+  padding: 5px 5px;
+}
+.row {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.fa {
+    width: 80px;
+    padding: 20px;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
 
 /* For small devices */
 
