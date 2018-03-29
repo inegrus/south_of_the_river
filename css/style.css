@@ -11,6 +11,36 @@
     font-size: 50px;
 }
 
+/* Menu */
+.menu {
+    margin-top: -20px;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 0px;
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    color: #b30059;
+}
+
+menu a:link {
+    color:black;
+    text-decoration: none;
+}
+menu a:visited {
+    color: black;
+    text-decoration: none;
+}
+menu a:active {
+    color: black;
+    text-decoration: none;
+}
+
+
 /* Carousel section */
 .container {
     margin-left: 15px;
@@ -22,18 +52,17 @@
 header {
         text-align: center;
         background-size: cover;
-        background-color: black;
+        background-color: #f9f2ec;
         background-size: cover;
+        height:250px;
       }
-  a   {
-    color: white;
-  }
+
 
 h1 {
-  color: white;
+  color: #b30059;
   font-size: 80px;
   font-family: Arial Black;
-  padding-top: 30px;
+  padding-top: 70px;
   margin-top: 0px;
   }
 ul  {
@@ -48,10 +77,16 @@ li {
   display: inline-block;
   padding: 5px 5px;
 }
-.row {
+.social {
   margin-top: 20px;
   margin-left: 20px;
+  color: white;
 }
+
+a .social {
+    color: white;
+}
+
 .fa {
     width: 80px;
     padding: 20px;
@@ -95,4 +130,64 @@ li {
     #myCarousel {
         width: 380px;
     }
+}
+
+/* Events */
+.events {
+    float: right;
+    margin-right: 200px;
+}
+
+/* Page 2 */
+
+#map {
+    height: 100%;
+  }
+
+  /* Eat Page */
+  /* Header */
+.eat-page header { 
+    background-image: url("../img/eat.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin: 0;
+  }
+
+/* Body */
+/*body {
+    margin: 0;
+}*/
+
+.menu {
+    background-color: #f9f2ec;
+    height: 50px;
+    border-top: 5px solid pink;
+}
+
+.eat-page .row {
+    margin: 30px;
+    
+}
+
+.eat-page .col {
+    margin: 5px;
+    background-color: antiquewhite;
+    width: 400px;
+    height: 500px;
+    text-align: center; 
+}
+
+.eat-page #name-place-id {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.eat-page .rating-img{
+    width: 30px;
+    
+}
+.eat-page #map {
+    display: none;
 }
