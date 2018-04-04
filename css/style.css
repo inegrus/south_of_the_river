@@ -1,25 +1,47 @@
 
-/* Title section */
-.title-section {
-    background-color: grey;
-    height: 100px;
+/* General */
+
+/* Header */
+header {
     text-align: center;
+    background-size: cover;
+    background-color: #f9f2ec;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    margin: 0;
+    
 }
 
-.title-section p {
-    padding-top: 15px;
-    font-size: 50px;
+.home-header {
+    height: 100px;
+}
+
+header img {
+    height: 100%;
+    width: 100%;
+} 
+
+h1 {
+    color: #b30059;
+    font-size: 80px;
+    font-family: Arial Black;
+    /* padding-top: 70px; */
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Menu */
 .menu {
-    margin-top: -20px;
+    /* margin-top: -20px; */
     height: 50px;
     font-size: 20px;
     padding-top: 10px;
     text-align: center;
     margin-left: 0px;
-    color: black;
+    background-color: #f9f2ec;
+    border-top: 2px solid #b30059;
     text-decoration: none;
 }
 
@@ -35,52 +57,145 @@ menu a:visited {
     color: black;
     text-decoration: none;
 }
+
 menu a:active {
     color: black;
     text-decoration: none;
 }
 
+.menu-link:hover {
+    /* background-color: #b30059; */
+    color: black;
+    /* padding: 12px 70px; */
+    /* padding: 30px; */
+    /* font-weight: bold; */
+    text-decoration: none;
+}
 
+#content {
+    padding-top: 15px;
+    padding-left: 50px;
+}
+
+
+
+.col {
+    margin: 5px;
+    width: 450px;
+    height: 485px;
+    border-radius: 5px;
+    overflow: scroll;
+    background-color: antiquewhite;
+    text-align: center;
+    /* box-shadow: 5px 5px 5px grey; */
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.col::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);                
+    width: 70%; 
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+
+.place-photo {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.place-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rating-img{
+    width: 30px;
+}
+
+.review-photo {
+    width: 50px;
+    height: 50px;
+}
+
+.wrapper {
+    display: grid;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: center;
+    grid-gap: 5px;
+    
+}
+
+
+.box {
+    background-color: #fff;
+    color: #444;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 85%;
+    
+}
+
+.grid-photo {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    
+}
+.grid-name {
+    grid-column: 2 / 4 ;
+    grid-row: 1 / 2;
+    font-size: 14px;
+    font-weight: bold;
+}
+.grid-review {
+    grid-column: 2 / 4 ;
+    grid-row: 2 / 3 ;
+    height: 60px;
+    overflow-x: scroll;
+}
+
+.all_reviews {
+    height: 300px;
+    overflow-x: scroll !important;
+}
+
+
+/* ====== End General ====== */
+
+/* Home page */
 /* Carousel section */
 .container {
     margin-left: 15px;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 #myCarousel {
-    width: 650px;
-}
-header {
-        text-align: center;
-        background-size: cover;
-        background-color: #f9f2ec;
-        background-size: cover;
-        height:250px;
-      }
-
-
-h1 {
-  color: #b30059;
-  font-size: 80px;
-  font-family: Arial Black;
-  padding-top: 70px;
-  margin-top: 0px;
-  }
-ul  {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 30 0 30;
-  background-color: black;
-
+    width: 800px;
 }
 
-li {
-  display: inline-block;
-  padding: 5px 5px;
+/* Right Container */
+.right-container {
+    display: inline-block;
+    
 }
+
+/* Events */
+
+/* Social */
 .social {
-  margin-top: 20px;
-  margin-left: 20px;
-  color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
 }
 
 a .social {
@@ -88,106 +203,125 @@ a .social {
 }
 
 .fa {
-    width: 80px;
-    padding: 20px;
-    font-size: 36px;
+    width: 50px;
+    padding: 10px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .fa:hover {
     opacity: 0.7;
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-/* For small devices */
-
-@media screen and (max-width: 600px) {
-
-    .title-section {
-        height: 60px;
-        text-align: center;
-    }
-
-    .title-section p {
-        font-size: 25px;
-    }
-
-    #myCarousel {
-        width: 380px;
-    }
+    background: #bb0000;
+    color: white;
 }
 
 /* Events */
 .events {
-    float: right;
+    
     margin-right: 200px;
 }
 
-/* Page 2 */
 
-#map {
-    height: 100%;
-  }
 
-  /* Eat Page */
-  /* Header */
-.eat-page header { 
-    background-image: url("../img/eat.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-    margin: 0;
-  }
 
-/* Body */
-/*body {
-    margin: 0;
-}*/
-
-.menu {
+/* Sleep */
+.sleep-page .menu {
     background-color: #f9f2ec;
     height: 50px;
-    border-top: 5px solid pink;
+    border-top: 2px solid black;
+    color: black;
 }
 
-.eat-page .row {
-    margin: 30px;
+
+/* Drink */
+.drink-page .menu {
+    background-color: #f9f2ec;
+    height: 50px;
+    border-top: 2px solid black;
+    color: black;
+}
+
+/* Visit */
+.visit-page .menu {
+    background-color: #f9f2ec;
+    height: 50px;
+    border-top: 2px solid black;
+    color: black;
+}
+
+/* Contact */
+.contact-page .menu {
+    background-color: #f9f2ec;
+    height: 50px;
+    border-top: 2px solid black;
+    color: black;
+}
+.contact-page p {
+    font-size: 17px;
+}
+.about-us {
+    width: 300px;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+.message {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 50px;
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+}
+
+/* For small devices */
+@media screen and (max-width: 600px) {
     
-}
-
-.eat-page .col {
-    margin: 5px;
-    background-color: antiquewhite;
-    width: 400px;
-    height: 500px;
-    text-align: center; 
-}
-
-.eat-page #name-place-id {
-    font-size: 20px;
-    margin: 5px;
-}
-
-.eat-page .rating-img{
-    width: 30px;
+    .title-section {
+        height: 60px;
+        text-align: center;
+    }
     
-}
-.eat-page #map {
-    display: none;
+    .title-section p {
+        font-size: 25px;
+    }
+    
+    #myCarousel {
+        width: 380px;
+        margin-top: 150px;
+    }
+    
+    .menu {
+        display: block;
+        padding-bottom: 30px;
+        height: 200px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    
+    .col-sm-4 {
+        background-color: #f9f2ec;
+        
+    }
+    
 }
