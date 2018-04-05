@@ -114,7 +114,10 @@ function initMap() {
   var placeIds = [
     'ChIJp-4PxL4EdkgRWW73bqnQAbw',
     'ChIJ5V4Tx7EEdkgRATzq2JQW34E',
-    'ChIJl5tV7FoDdkgRcHC9YrS_2Dk'
+    'ChIJl5tV7FoDdkgRcHC9YrS_2Dk',
+    'ChIJ_9DoO9Kp2EcRQTeXc6O0KdM',
+    'ChIJpbPTjLMFdkgR375P0jEuw5A',
+    'ChIJy6-bNYQCdkgR93abmMNPNsI'
   ];
   
   for (var pos = 0; pos < placeIds.length; ++pos) {
