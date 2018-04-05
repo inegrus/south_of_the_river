@@ -216,6 +216,7 @@ h2 {
 .right-container {
     display: inline-block;
     text-align: center;
+    margin-right: 30px;
 }
 
 /* Events */
