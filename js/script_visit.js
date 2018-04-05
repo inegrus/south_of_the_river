@@ -115,8 +115,8 @@ function initMap() {
     'ChIJp9ypjCqo2EcRAoQcRV-yqzE',
     'ChIJE_hdXfEDdkgR09Yvt9rEzmI',
     'ChIJs_wmr0cWa0gRHr60qjwn1Mo',
-    'ChIJo5dTOoQCdkgRjE4B-BTVbOU',
-    'ChIJ_exC98wadkgR5_yqfSEuQOc'
+    'ChIJ_exC98wadkgR5_yqfSEuQOc',
+    'ChIJSep40kQDdkgRPze1yPrhO9U'
   ];
   
   for (var pos = 0; pos < placeIds.length; ++pos) {
