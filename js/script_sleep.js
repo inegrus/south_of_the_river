@@ -92,7 +92,6 @@ function generatePlace(place) {
   
 }
 
-
 function getPlaceDetails(placeId) {
   service.getDetails({
     placeId: placeId, // from PlaceID Finder
@@ -102,7 +101,6 @@ function getPlaceDetails(placeId) {
     }
   });
 }
-
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -114,9 +112,9 @@ function initMap() {
   service = new google.maps.places.PlacesService(map);
   
   var placeIds = [
-    'ChIJD2bPdVcDdkgRuUSgnOXnKDE',
-    'ChIJPcmKgaYDdkgRdx_55JaHct0',
-    'ChIJZ7w_t3oCdkgRkg9mdejtZfM'
+    'ChIJp-4PxL4EdkgRWW73bqnQAbw',
+    'ChIJ5V4Tx7EEdkgRATzq2JQW34E',
+    'ChIJl5tV7FoDdkgRcHC9YrS_2Dk'
   ];
   
   for (var pos = 0; pos < placeIds.length; ++pos) {

@@ -48,7 +48,6 @@ function generatePlace(place) {
   placeRating.innerHTML = place.rating;
   column.appendChild(placeRating);
   
-  
   // Review
   var all_reviews = document.createElement('div');
   
@@ -70,7 +69,6 @@ function generatePlace(place) {
     review.appendChild(reviewPhoto);
     
     // Author
-    
     var author_name = document.createElement('div');
     author_name.setAttribute("class", "box grid-name");
     author_name.innerHTML = place.reviews[i].author_name;
@@ -89,7 +87,6 @@ function generatePlace(place) {
   }
   
   column.appendChild(all_reviews);
-  
 }
 
 
@@ -103,7 +100,6 @@ function getPlaceDetails(placeId) {
   });
 }
 
-
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -33.866, lng: 151.196},
@@ -114,9 +110,9 @@ function initMap() {
   service = new google.maps.places.PlacesService(map);
   
   var placeIds = [
-    'ChIJD2bPdVcDdkgRuUSgnOXnKDE',
-    'ChIJPcmKgaYDdkgRdx_55JaHct0',
-    'ChIJZ7w_t3oCdkgRkg9mdejtZfM'
+    'ChIJORqCihYCdkgRn9b55OiEA6c',
+    'ChIJNx7vk0IEdkgRc7UEHYoIzsU',
+    'ChIJhXigkGgEdkgR0fIdmOFh2r8'
   ];
   
   for (var pos = 0; pos < placeIds.length; ++pos) {

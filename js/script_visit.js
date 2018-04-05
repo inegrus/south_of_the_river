@@ -74,7 +74,6 @@ function generatePlace(place) {
     var author_name = document.createElement('div');
     author_name.setAttribute("class", "box grid-name");
     author_name.innerHTML = place.reviews[i].author_name;
-    
     review.appendChild(author_name);
     
     // Review
@@ -92,7 +91,6 @@ function generatePlace(place) {
   
 }
 
-
 function getPlaceDetails(placeId) {
   service.getDetails({
     placeId: placeId, // from PlaceID Finder
@@ -102,7 +100,6 @@ function getPlaceDetails(placeId) {
     }
   });
 }
-
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -114,9 +111,9 @@ function initMap() {
   service = new google.maps.places.PlacesService(map);
   
   var placeIds = [
-    'ChIJD2bPdVcDdkgRuUSgnOXnKDE',
-    'ChIJPcmKgaYDdkgRdx_55JaHct0',
-    'ChIJZ7w_t3oCdkgRkg9mdejtZfM'
+    'ChIJ0-48HywBdkgRh7MH0Igd1f4',
+    'ChIJp9ypjCqo2EcRAoQcRV-yqzE',
+    'ChIJE_hdXfEDdkgR09Yvt9rEzmI'
   ];
   
   for (var pos = 0; pos < placeIds.length; ++pos) {

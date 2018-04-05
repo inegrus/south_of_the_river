@@ -14,7 +14,7 @@
 <body class="contact-page">
     
     <header>
-        <img src="img/contact2.jpg" />  
+        <img src="img/contact.jpg" />  
     </header>
     <div class="row menu">
         <div class="col-sm-4 col-md-2"><a class="menu-link" href="index.html">Home</a></div>
@@ -22,30 +22,35 @@
         <div class="col-sm-4 col-md-2"><a class="menu-link" href="eat.html">Eat</a></div>
         <div class="col-sm-4 col-md-2"><a class="menu-link" href="drink.html">Drink</a></div>
         <div class="col-sm-4 col-md-2"><a class="menu-link" href="visit.html">Visit</a></div>
-        <div class="col-sm-4 col-md-2"><a class="menu-link" href="contact.html">Contact</a></div>
+        <div class="col-sm-4 col-md-2"><a class="menu-link current-page" href="contact.html">Contact</a></div>
     </div>
     
-    <div class="content-contact">
+    <div class="contact-form">
         <div class="about-us">
+            <h4>About us </h4>
             <p>This website was co-founded by Ioana Ravar and Chantelle Adonai, two girls living in South London. We think South London is equally amazing as the North so we want to showcase all the great things it has to offer!</p>
         </div>
-        
-        <div class="contact">
-            <div class="message">
-                <p>If you would like to get in touch with us you can send us a message below:</p>
-            </div>
-            <form>
-                <p>Your name</p>
-                <input type="text"><br><br>
-                <p>Your email</p>
-                <input type="email"><br>
-                Your message <br>
-                <textarea rows="4" cols="30"></textarea><br>
-                <input type="submit">
+        <div>
+            <form id="contact" action="mailto:someone@example.com" method="post" enctype="text/plain"  method="post">
+                <h4>Contact us </h4>
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
             </form>
-        </div> 
+        </div>
     </div>
-    
     <script async defer 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKQyfDsbuWy5yvvCOP-_91y3x-U15Fk3E&libraries=places&callback=initMap">
 </script>
